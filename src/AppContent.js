@@ -15,9 +15,6 @@ import paris2 from './paris2.png';
 import Carousel from 'react-bootstrap/Carousel';
 import {Row, Col, Image} from 'react-bootstrap';
 
-
-
-
 class AppContent extends Component {
   render() { return ( 
   
@@ -25,25 +22,29 @@ class AppContent extends Component {
       {/* Barcelona */}
       <Row>
         <Col>
-          <Carousel className="mt-5 mb-3 w-100" fade="true">
+          <Carousel className="mt-5 mb-3 w-100">
             <Carousel.Item>
-              <Image className="d-block" src={barcelona} alt="First slide" fluid/>
-              <Carousel.Caption>
-                <h5>New York City</h5>
-              </Carousel.Caption>
+              <Image 
+              className="d-block" 
+              src={barcelona}
+              alt="First slider" 
+              fluid/>
             </Carousel.Item>
+            <Carousel.Caption>
+              <h5>Barcelona</h5>
+            </Carousel.Caption>
           
             <Carousel.Item>
               <Image className="d-block" src={barcelona1} alt="Second slide" fluid/>
               <Carousel.Caption>
-              <h5>New York City</h5>
+              <h5>Barcelona</h5>
               </Carousel.Caption>
             </Carousel.Item>
         
             <Carousel.Item>
               <Image className="d-block" src={barcelona2} alt="Third slide" fluid/>
               <Carousel.Caption>
-              <h5>New York City</h5>
+              <h5>Barcelona</h5>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
@@ -54,21 +55,21 @@ class AppContent extends Component {
             <Carousel.Item>
               <Image className="d-block w-100" src={nyc} alt="First slide" fluid/>
               <Carousel.Caption>
-                <h5>Amsterdam</h5>
+                <h5>New York</h5>
               </Carousel.Caption>
             </Carousel.Item>
           
             <Carousel.Item>
               <Image className="d-block w-100" src={nyc1} alt="Third slide" fluid/>
               <Carousel.Caption>
-              <h5>Amsterdam</h5>
+              <h5>New York</h5>
               </Carousel.Caption>
             </Carousel.Item>
         
             <Carousel.Item>
               <Image className="d-block w-100" src={nyc2} alt="Third slide" fluid/>
               <Carousel.Caption>
-              <h5>Amsterdam</h5>
+              <h5>New York</h5>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
@@ -84,21 +85,21 @@ class AppContent extends Component {
             <Carousel.Item>
               <Image className="d-block w-100" src={amsterdam} alt="First slide" fluid/>
               <Carousel.Caption>
-                <h3>Dublin, Ireland</h3>
+                <h5>Amsterdam</h5>
               </Carousel.Caption>
             </Carousel.Item>
           
             <Carousel.Item>
               <Image className="d-block w-100" src={amsterdam1} alt="Third slide" fluid/>
               <Carousel.Caption>
-                <h3>Tokio, Japan</h3>
+                <h5>Amsterdam</h5>
               </Carousel.Caption>
             </Carousel.Item>
         
             <Carousel.Item>
               <Image className="d-block w-100" src={amsterdam2} alt="Third slide" fluid/>
               <Carousel.Caption>
-                <h3>Rotterdam, The Netherlands</h3>
+                <h5>Amsterdam</h5>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
@@ -109,21 +110,21 @@ class AppContent extends Component {
             <Carousel.Item>
               <Image className="d-block w-100" src={paris} alt="First slide" fluid/>
               <Carousel.Caption>
-                <h3>Dublin, Ireland</h3>
+                <h5>Paris</h5>
               </Carousel.Caption>
             </Carousel.Item>
           
             <Carousel.Item>
               <Image className="d-block w-100" src={paris1} alt="Third slide" fluid/>
               <Carousel.Caption>
-                <h3>Tokio, Japan</h3>
+                <h5>Paris</h5>
               </Carousel.Caption>
             </Carousel.Item>
         
             <Carousel.Item>
               <Image className="d-block w-100" src={paris2} alt="Third slide" fluid/>
               <Carousel.Caption>
-                <h3>Rotterdam, The Netherlands</h3>
+                <h5>Paris</h5>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
