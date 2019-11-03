@@ -1,26 +1,24 @@
 import React, {Component} from 'react';
 import AppHeader from './AppHeader.js';
-import AppNavBar from './AppNavBar.js';
 import AppContent from './AppContent.js';
-
+import {BrowserRouter as Router, Route} from "react-router-dom";
 import './App.css';
 
 class App extends Component {
   render() { return ( 
       <div className="container">
-        <div  className="d-sm-inline">
-          <AppNavBar></AppNavBar>
-        </div>
-        <div>
+        <div className="mt-1">
           <AppHeader></AppHeader>
         </div>
-        <div className="container">
-          <AppContent></AppContent>
-        </div>
+
+          <Router>
+              <Route exact path="/" component={AppContent}/>
+              <Route path="/home" component={AppContent}/>
+              <Route path="/cities" component={AppContent}/>
+          </Router>
+
       </div>
 
-  );
-}
-}
+  )}}
 
 export default App;
